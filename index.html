@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./public/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="./bundle.js"></script>
+    <title>Google Chrome IaC</title>
+  </head>
+  <body>
+    <h1>Google Chrome IaC</h1>
+    <!-- Login session -->
+    <div id="login_session">
+      <button type="button" id="upload_local_file">Upload local file</button>
+      <button type="button" id="login_github">
+        <i class="fab fa-github"></i> Login with GitHub
+      </button>
+    </div>
+    <!-- If you upload file from local pc, the below menu will be appeared. -->
+    <div id="local_file_menu">
+      <form id="local_file_form">
+        <input type="file" id="local_file" placeholder="Upload local file" required>
+        <button type="submit" id="apply_on_local_file_menu">Apply</button>
+      </form>
+    </div>
+    <!-- If you login with GitHub Account, the below menu will be appeared. -->
+    <div id="github_menu">
+      <form id="github_form">
+        <input type="text" id="github_organization_name" placeholder="Organization name" required>
+        <input type="text" id="github_repository_name" placeholder="Repository name" required>
+        <button type="submit" id="apply_on_github_menu">Apply</button>
+      </form>
+    </div>
+  </body>
+</html>

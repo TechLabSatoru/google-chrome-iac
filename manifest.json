@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Google Chrome IaC",
+  "description": "Manage everything with code as for Google Chrome",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "./index.html"
+  },
+  "icons": {
+    "16": "./public/images/main.png",
+    "32": "./public/images/main.png",
+    "48": "./public/images/main.png",
+    "128": "./public/images/main.png"
+  },
+  "permissions": [
+    "bookmarks",
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "f65de80884a155296829",
+    "scopes": ["user", "repo"]
+  },
+  "host_permissions": [
+    "https://api.github.com/",
+    "https://github.com/login/oauth/access_token",
+    "https://github.com/*",
+    "https://cdn.jsdelivr.net/",
+    "https://cdn.jsdelivr.net/npm/js-yaml/dist/"
+  ]
+}

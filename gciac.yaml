@@ -1,0 +1,14 @@
+---
+
+- name: Google
+  type: folder
+  items:
+    - name: Google
+      type: file
+      link: https://www.google.com
+    - name: Amazon
+      type: folder
+      items:
+        - name: Amazon
+          type: file
+          link: https://www.amazon.com

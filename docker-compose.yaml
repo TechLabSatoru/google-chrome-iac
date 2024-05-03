@@ -1,0 +1,12 @@
+---
+
+version: "3"
+
+services:
+  node:
+    image: node:20
+    container_name: node
+    working_dir: /home/$USER/
+    tty: true
+    volumes:
+      - .:/home/$USER/

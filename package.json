@@ -1,0 +1,32 @@
+{
+  "name": "techlabsatoru",
+  "version": "1.0.0",
+  "description": "You can manage Google Chrome as code (like IaC).",
+  "main": "./src/main.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "build": "webpack --config webpack.config.cjs --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "babel-loader": "^9.1.3",
+    "jest": "^29.7.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "jest": {
+    "transform": {},
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3"
+  }
+}
