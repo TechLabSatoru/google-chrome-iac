@@ -37,7 +37,7 @@ export async function loadFileFromGitHub(token, githubOrganizationName, githubRe
 
     let data = await response.json();
 
-    let jsonData = yaml.load(atob(data.content));
+    let jsonData = yaml.load(decodeURIComponent(escape(atob(data.content))));
 
     return jsonData;
 }
